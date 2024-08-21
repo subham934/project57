@@ -1,0 +1,138 @@
+@import url("https://fonts.googleapis.com/css2?family=Permanent+Marker&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  list-style: none;
+  text-decoration: none;
+  scroll-behavior: smooth;
+  scroll-padding-top: 3.5rem;
+}
+
+:root {
+  --bg-color: #ffffff;
+  --text-color: #121212;
+  --main-font: 2.2rem;
+  --p-font: 1.1rem;
+  --big-font: 4.5rem;
+  --h2-font: 3.3rem;
+  --h3-font: 2rem;
+  --other-color: #fcfcfc;
+  --second-color: #c6c9d8bf;
+  --transition: all 0.4s ease;
+}
+
+.hero {
+  height: 100vh;
+  width: 100%;
+  background-color: #1a1a1a;
+}
+
+.logo {
+  width: 90px;
+  height: auto;
+  cursor: pointer;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 35px;
+  padding-left: 12%;
+  padding-right: 12%;
+  z-index: 5;
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  padding: 0 25px;
+  z-index: 7;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: bisque;
+  font-weight: 500;
+  font-size: 17px;
+  z-index: 7;
+}
+
+nav ul li a:hover {
+  color: #803dff;
+  transition: var(--transition);
+}
+
+.main-text {
+  position: absolute;
+  top: 50%;
+  left: 12%;
+  transform: translateY(-50%);
+}
+
+.main-text h1 {
+  font-size: 140px;
+  color: #3c3c3c;
+  font-weight: 800;
+  line-height: 170px;
+}
+
+span {
+  color: white;
+  letter-spacing: 2px;
+}
+
+.main-text p {
+  color: #737373;
+  font-weight: 500;
+  font-size: 22px;
+  letter-spacing: 1px;
+  margin: 40px 0;
+}
+
+.main-text button {
+  width: 160px;
+  background-color: #803dff;
+  padding: 12px 10px;
+  border: none;
+  color: white;
+  font-size: 18px;
+  letter-spacing: 1px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: var(--transition);
+}
+
+button img {
+  width: 35px;
+  display: none;
+}
+
+button:hover img {
+  display: block;
+}
+
+button:hover {
+  width: 175px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main-img {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  bottom: 0;
+  right: 0;
+  text-align: right;
+}
+
+.main-img img {
+  height: 100%;
+}
+
+
